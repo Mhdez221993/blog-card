@@ -94,7 +94,14 @@ img {
   color: var(--cta-color);
   font-size: 1.125rem;
   font-weight: 500;
-  font-family: "Noto Sans"
+  font-family: "Noto Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-cta span {
+  margin-right: 5px;
 }
 
 .card-cta:hover {
