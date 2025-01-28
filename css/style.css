@@ -43,6 +43,11 @@ button {
   background-color: none;
 }
 
+.card-wrapper {
+  width: 100%;
+  padding: 0 16px;
+}
+
 .card {
   width: 340px;
   background-color: #fff;
@@ -50,7 +55,6 @@ button {
   flex-direction: column;
   margin: 120px auto 0;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 img {
@@ -119,4 +123,11 @@ img {
 
 .card-cta:disabled {
   color: var(--cta-disabled-color);
+}
+
+@media (min-width: 768px) {
+  .card-wrapper {
+    padding: 0 32px;
+    width: 100%;
+  }
 }
