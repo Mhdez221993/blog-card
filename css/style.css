@@ -48,13 +48,18 @@ button {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin: 120px auto 0;
+  /* margin: 120px auto 0; */
+  margin-top: 120px;
+  margin-left: auto;
   border-radius: 8px;
   overflow: hidden;
 }
 
 img {
   border-radius: 8px 8px 0 0;
+  background-size: cover;
+  height: 290px;
+  object-fit: cover;
 }
 
 .card-content {
@@ -63,10 +68,11 @@ img {
 
 .card-tag {
   margin-bottom: 10px;
-  padding: 3px 12px;
+  padding: 2px 8px;
   border: none;
   color: var(--tag-color);
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
   background-color: var(--tag-bg-color);
   border: 1px solid var(--tag-border-color);
   border-radius: 15px;
