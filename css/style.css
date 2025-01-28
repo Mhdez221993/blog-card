@@ -1,7 +1,22 @@
-/* Put any custom CSS styles here.  */
-/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+:root {
+  --body-bg-color: #D2D6DB;
+  --card-bg-color: #fff;
+  --tag-color: #15803D;
+  --tag-bg-color: #F0FDF4;
+  --tag-border-color: #BBF7D0;
+  --title-color: #171717;
+  --description-color: #525252;
+  --cta-color: #4338CA;
+  --cta-focus-color: #525252;
+  --cta-disabled-color: #525252;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  background-color: var(--body-bg-color);
+  background-image: linear-gradient(#f9fafb, #d2d6db);
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
@@ -14,4 +29,83 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+img, p, h2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: none;
+}
+
+.card {
+  width: 340px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 120px auto 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+img {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-tag {
+  margin-bottom: 10px;
+  padding: 3px 12px;
+  border: none;
+  color: var(--tag-color);
+  font-size: 1rem;
+  background-color: var(--tag-bg-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 15px;
+  font-family: "Noto Sans"
+}
+
+.card-title {
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--title-color);
+  font-family: "Noto Sans"
+}
+
+.card-description {
+  margin-bottom: 20px;
+  color: var(--description-color);
+  font-weight: 500;
+  font-family: "Noto Sans"
+}
+
+.card-cta {
+  border: none;
+  background-color: var(--card-bg-color);
+  color: var(--cta-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: "Noto Sans"
+}
+
+.card-cta:hover {
+  color: var(--cta-color);
+}
+
+.card-cta:focus {
+  border: 4px solid rgb(67, 56, 202, 0.2);
+  border-radius: 9px;
+}
+
+.card-cta:disabled {
+  color: var(--cta-disabled-color);
 }
