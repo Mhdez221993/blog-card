@@ -25,7 +25,7 @@ Run in your terminal `git clone git@github.com:Mhdez221993/blog-card.git`
 
 ## Helpful links
 
-- [Flexbox: center horizontally and vertically](https://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically)
+- [SVG in HTML](https://www.w3schools.com/graphics/svg_inhtml.asp)
 
 ## Author
 
